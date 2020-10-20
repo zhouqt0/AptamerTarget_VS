@@ -1,0 +1,25 @@
+POSTDOCK_XP_DELE   0.5
+COMPRESS_POSES   True
+GRIDFILE   /data/qtzhou/1OLD-ligands/88-1old-ligands-drugbanks/glide-grid_1OLD_grid7.zip
+PRECISION   XP
+WRITE_XP_DESC   False
+EXPANDED_SAMPLING   True
+NREPORT   1056
+LIGANDFILE   glide-dock_XP_1OLD-grid7-interesting-040_in.maegz
+LIGAND_OFFSET   41184
+
+[FEATURE:2]
+    PATTERN2   "[#1][S;X2] 1 include"
+    PATTERN3   "[#1][O-] 1 include"
+    PATTERN1   "[#1][#7] 1 include"
+    PATTERN4   "[#1][O;X2] 1 include"
+
+[CONSTRAINT_GROUP:1]
+    USE_CONS   A:DC:9:O2(hbond):1, A:DC:9:N3(hbond):2
+    NREQUIRED_CONS   1
+
+[FEATURE:1]
+    PATTERN2   "[#1][S;X2] 1 include"
+    PATTERN3   "[#1][O-] 1 include"
+    PATTERN1   "[#1][#7] 1 include"
+    PATTERN4   "[#1][O;X2] 1 include"
