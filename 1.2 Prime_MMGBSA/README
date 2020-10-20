@@ -1,0 +1,35 @@
+In this section, we performed Prime MM-GBSA calculation that computed the force field energies in implicit solvent of the bound and unbound molecules involved in the binding process, where all bases within 6 Å of the docked compounds were relaxed using VSGB2.0 implicit solvent model with the OPLS3 force field
+See https://www.schrodinger.com/kb/1875?original_search=Prime%20MM-GBSA
+and https://www.schrodinger.com/training/tutorials for more explanation.
+
+Inputs: Pose Viewer file (Glide output) or the separated ligand and protein structures (for example, prime_mmgbsa_1OLD-grid1_pv.maegz below).
+Outputs: The output Maestro structure file, which is compressed by default, includes a number of properties. prime_mmgbsa_1OLD-grid1-names-out.maegz
+
+Commands:
+prime_mmgbsa -out_type COMPLEX -flexdist 6.0 prime_mmgbsa_1OLD-grid1_pv.maegz 
+
+******************************************************
+There are five fundamental energy calculations done in Prime MM-GBSA:
+Optimized free receptor (="Receptor")
+Optimized free ligand (="Ligand")
+Optimized complex (="Complex")
+Receptor from minimized/optimized complex
+Ligand from minimized/optimized complex
+From these energies, the following strain and binding energies are calculated:
+Rec Strain = Receptor(from optimized complex) − Receptor
+Lig Strain = Ligand(from optimized complex) − Ligand
+MMGBSA dG Bind = Complex − Receptor − Ligand
+MMGBSA dG Bind(NS) = Complex − Receptor(from optimized complex) − Ligand(from optimized complex) = MMGBSA dG Bind − Rec Strain − Lig Strain
+In the last energy above, "NS" means "no strain"; it is the binding/interaction energy without accounting for the receptor and ligand conformational changes needed to form the complex. The energies of the ligand and receptor from the minimized/optimized complex are not reported as output properties. However, they can be calculated from the other properties that are reported, if desired. Also, the "Rec Strain" properties are not reported if Prime MM-GBSA is run without receptor flexibility.
+
+In addition to the total energy, the contributions to the total energy from different components is reported. The components are listed below:
+Coulomb—Coulomb energy
+Covalent—Covalent binding energy
+vdW—Van der Waals energy
+Lipo—Lipophilic energy
+Solv GB—Generalized Born electrostatic solvation energy
+Energy—Total energy (Prime energy)
+Hbond—Hydrogen-bonding correction
+Packing—Pi-pi packing correction
+SelfCont—Self-contact correction
+For more information on the solvent model in Prime (including the "Lipo" and "SelfCont" terms), please see the publication: Li, J.; Abel, R.; Zhu, K.; Cao, Y.; Zhao, S.; Friesner, R. A., "The VSGB 2.0 model: a next generation energy model for high resolution protein structure modeling," Proteins, 2011, 79, 2794-812
