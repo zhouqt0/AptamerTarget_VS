@@ -1,0 +1,7 @@
+&general
+   endframe=20, keep_files=2,
+/
+&nmode
+   nmstartframe=1, nmendframe=20,
+   nminterval=1, nmode_igb=1, nmode_istrng=0.1,
+/

@@ -1,0 +1,86 @@
+| Run on Wed Jan 11 18:36:43 2017
+|
+|Input file:
+|--------------------------------------------------------------
+|&general
+|   endframe=20, keep_files=2,
+|/
+|&nmode
+|   nmstartframe=1, nmendframe=20,
+|   nminterval=1, nmode_igb=1, nmode_istrng=0.1,
+|/
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Complex topology file:           ../com.prmtop
+|Receptor topology file:          ../rec.prmtop
+|Ligand topology file:            ../lig.prmtop
+|Initial mdcrd(s):                entropy-10.mdcrd
+|                                 entropy-11.mdcrd
+|                                 entropy-12.mdcrd
+|                                 entropy-13.mdcrd
+|                                 entropy-14.mdcrd
+|                                 entropy-15.mdcrd
+|                                 entropy-16.mdcrd
+|                                 entropy-17.mdcrd
+|                                 entropy-18.mdcrd
+|                                 entropy-19.mdcrd
+|                                 entropy-1.mdcrd
+|                                 entropy-20.mdcrd
+|                                 entropy-2.mdcrd
+|                                 entropy-3.mdcrd
+|                                 entropy-4.mdcrd
+|                                 entropy-5.mdcrd
+|                                 entropy-6.mdcrd
+|                                 entropy-7.mdcrd
+|                                 entropy-8.mdcrd
+|                                 entropy-9.mdcrd
+|
+|Receptor mask:                  ":1-24"
+|Ligand mask:                    ":25"
+|Ligand residue name is "MOL"
+|
+|Calculations performed using 20 complex frames.
+|NMODE calculations performed using 20 frames.
+|
+|All units are reported in kcal/mole.
+|All entropy results have units kcal/mol (Temperature is 298.15 K).
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+ENTROPY RESULTS (HARMONIC APPROXIMATION) CALCULATED WITH NMODE:
+
+Complex:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               15.6776                0.0000              0.0000
+Rotational                  15.5146                0.0205              0.0046
+Vibrational                604.7481                3.3266              0.7439
+Total                      635.9403                3.3427              0.7475
+
+Receptor:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               15.6463                0.0000              0.0000
+Rotational                  15.5011                0.0312              0.0070
+Vibrational                586.4000                3.3159              0.7415
+Total                      617.5473                3.3392              0.7467
+
+Ligand:
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational               12.6908                0.0000              0.0000
+Rotational                  10.0407                0.0155              0.0035
+Vibrational                 22.5116                0.9930              0.2220
+Total                       45.2431                0.9911              0.2216
+
+Differences (Complex - Receptor - Ligand):
+Entropy Term                Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+Translational              -12.6594                0.0000              0.0000
+Rotational                 -10.0272                0.0215              0.0048
+Vibrational                 -4.1634                2.1941              0.4906
+
+DELTA S total=             -26.8500                2.2062              0.4933
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------

@@ -1,0 +1,354 @@
+| Run on Wed Jan 11 06:35:29 2017
+|
+|Input file:
+|--------------------------------------------------------------
+|&general
+|   startframe=1,endframe=200, keep_files=2,
+|/
+|&gb
+|  igb=1, saltcon=0.100,surften=0.00542,surfoff=0.92,
+|/
+|&pb
+|  indi=1.0,exdi=80.0,istrng=0.1,scale=2,fillratio=4.0,cavity_surften=0.00542, cavity_offset=0.92,radiopt=0,inp=1,
+|/
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Complex topology file:           ../com.prmtop
+|Receptor topology file:          ../rec.prmtop
+|Ligand topology file:            ../lig.prmtop
+|Initial mdcrd(s):                complex-100.mdcrd
+|                                 complex-101.mdcrd
+|                                 complex-102.mdcrd
+|                                 complex-103.mdcrd
+|                                 complex-104.mdcrd
+|                                 complex-105.mdcrd
+|                                 complex-106.mdcrd
+|                                 complex-107.mdcrd
+|                                 complex-108.mdcrd
+|                                 complex-109.mdcrd
+|                                 complex-10.mdcrd
+|                                 complex-110.mdcrd
+|                                 complex-111.mdcrd
+|                                 complex-112.mdcrd
+|                                 complex-113.mdcrd
+|                                 complex-114.mdcrd
+|                                 complex-115.mdcrd
+|                                 complex-116.mdcrd
+|                                 complex-117.mdcrd
+|                                 complex-118.mdcrd
+|                                 complex-119.mdcrd
+|                                 complex-11.mdcrd
+|                                 complex-120.mdcrd
+|                                 complex-121.mdcrd
+|                                 complex-122.mdcrd
+|                                 complex-123.mdcrd
+|                                 complex-124.mdcrd
+|                                 complex-125.mdcrd
+|                                 complex-126.mdcrd
+|                                 complex-127.mdcrd
+|                                 complex-128.mdcrd
+|                                 complex-129.mdcrd
+|                                 complex-12.mdcrd
+|                                 complex-130.mdcrd
+|                                 complex-131.mdcrd
+|                                 complex-132.mdcrd
+|                                 complex-133.mdcrd
+|                                 complex-134.mdcrd
+|                                 complex-135.mdcrd
+|                                 complex-136.mdcrd
+|                                 complex-137.mdcrd
+|                                 complex-138.mdcrd
+|                                 complex-139.mdcrd
+|                                 complex-13.mdcrd
+|                                 complex-140.mdcrd
+|                                 complex-141.mdcrd
+|                                 complex-142.mdcrd
+|                                 complex-143.mdcrd
+|                                 complex-144.mdcrd
+|                                 complex-145.mdcrd
+|                                 complex-146.mdcrd
+|                                 complex-147.mdcrd
+|                                 complex-148.mdcrd
+|                                 complex-149.mdcrd
+|                                 complex-14.mdcrd
+|                                 complex-150.mdcrd
+|                                 complex-151.mdcrd
+|                                 complex-152.mdcrd
+|                                 complex-153.mdcrd
+|                                 complex-154.mdcrd
+|                                 complex-155.mdcrd
+|                                 complex-156.mdcrd
+|                                 complex-157.mdcrd
+|                                 complex-158.mdcrd
+|                                 complex-159.mdcrd
+|                                 complex-15.mdcrd
+|                                 complex-160.mdcrd
+|                                 complex-161.mdcrd
+|                                 complex-162.mdcrd
+|                                 complex-163.mdcrd
+|                                 complex-164.mdcrd
+|                                 complex-165.mdcrd
+|                                 complex-166.mdcrd
+|                                 complex-167.mdcrd
+|                                 complex-168.mdcrd
+|                                 complex-169.mdcrd
+|                                 complex-16.mdcrd
+|                                 complex-170.mdcrd
+|                                 complex-171.mdcrd
+|                                 complex-172.mdcrd
+|                                 complex-173.mdcrd
+|                                 complex-174.mdcrd
+|                                 complex-175.mdcrd
+|                                 complex-176.mdcrd
+|                                 complex-177.mdcrd
+|                                 complex-178.mdcrd
+|                                 complex-179.mdcrd
+|                                 complex-17.mdcrd
+|                                 complex-180.mdcrd
+|                                 complex-181.mdcrd
+|                                 complex-182.mdcrd
+|                                 complex-183.mdcrd
+|                                 complex-184.mdcrd
+|                                 complex-185.mdcrd
+|                                 complex-186.mdcrd
+|                                 complex-187.mdcrd
+|                                 complex-188.mdcrd
+|                                 complex-189.mdcrd
+|                                 complex-18.mdcrd
+|                                 complex-190.mdcrd
+|                                 complex-191.mdcrd
+|                                 complex-192.mdcrd
+|                                 complex-193.mdcrd
+|                                 complex-194.mdcrd
+|                                 complex-195.mdcrd
+|                                 complex-196.mdcrd
+|                                 complex-197.mdcrd
+|                                 complex-198.mdcrd
+|                                 complex-199.mdcrd
+|                                 complex-19.mdcrd
+|                                 complex-1.mdcrd
+|                                 complex-200.mdcrd
+|                                 complex-20.mdcrd
+|                                 complex-21.mdcrd
+|                                 complex-22.mdcrd
+|                                 complex-23.mdcrd
+|                                 complex-24.mdcrd
+|                                 complex-25.mdcrd
+|                                 complex-26.mdcrd
+|                                 complex-27.mdcrd
+|                                 complex-28.mdcrd
+|                                 complex-29.mdcrd
+|                                 complex-2.mdcrd
+|                                 complex-30.mdcrd
+|                                 complex-31.mdcrd
+|                                 complex-32.mdcrd
+|                                 complex-33.mdcrd
+|                                 complex-34.mdcrd
+|                                 complex-35.mdcrd
+|                                 complex-36.mdcrd
+|                                 complex-37.mdcrd
+|                                 complex-38.mdcrd
+|                                 complex-39.mdcrd
+|                                 complex-3.mdcrd
+|                                 complex-40.mdcrd
+|                                 complex-41.mdcrd
+|                                 complex-42.mdcrd
+|                                 complex-43.mdcrd
+|                                 complex-44.mdcrd
+|                                 complex-45.mdcrd
+|                                 complex-46.mdcrd
+|                                 complex-47.mdcrd
+|                                 complex-48.mdcrd
+|                                 complex-49.mdcrd
+|                                 complex-4.mdcrd
+|                                 complex-50.mdcrd
+|                                 complex-51.mdcrd
+|                                 complex-52.mdcrd
+|                                 complex-53.mdcrd
+|                                 complex-54.mdcrd
+|                                 complex-55.mdcrd
+|                                 complex-56.mdcrd
+|                                 complex-57.mdcrd
+|                                 complex-58.mdcrd
+|                                 complex-59.mdcrd
+|                                 complex-5.mdcrd
+|                                 complex-60.mdcrd
+|                                 complex-61.mdcrd
+|                                 complex-62.mdcrd
+|                                 complex-63.mdcrd
+|                                 complex-64.mdcrd
+|                                 complex-65.mdcrd
+|                                 complex-66.mdcrd
+|                                 complex-67.mdcrd
+|                                 complex-68.mdcrd
+|                                 complex-69.mdcrd
+|                                 complex-6.mdcrd
+|                                 complex-70.mdcrd
+|                                 complex-71.mdcrd
+|                                 complex-72.mdcrd
+|                                 complex-73.mdcrd
+|                                 complex-74.mdcrd
+|                                 complex-75.mdcrd
+|                                 complex-76.mdcrd
+|                                 complex-77.mdcrd
+|                                 complex-78.mdcrd
+|                                 complex-79.mdcrd
+|                                 complex-7.mdcrd
+|                                 complex-80.mdcrd
+|                                 complex-81.mdcrd
+|                                 complex-82.mdcrd
+|                                 complex-83.mdcrd
+|                                 complex-84.mdcrd
+|                                 complex-85.mdcrd
+|                                 complex-86.mdcrd
+|                                 complex-87.mdcrd
+|                                 complex-88.mdcrd
+|                                 complex-89.mdcrd
+|                                 complex-8.mdcrd
+|                                 complex-90.mdcrd
+|                                 complex-91.mdcrd
+|                                 complex-92.mdcrd
+|                                 complex-93.mdcrd
+|                                 complex-94.mdcrd
+|                                 complex-95.mdcrd
+|                                 complex-96.mdcrd
+|                                 complex-97.mdcrd
+|                                 complex-98.mdcrd
+|                                 complex-99.mdcrd
+|                                 complex-9.mdcrd
+|
+|Receptor mask:                  ":1-24"
+|Ligand mask:                    ":25"
+|Ligand residue name is "MOL"
+|
+|Calculations performed using 200 complex frames.
+|Poisson Boltzmann calculations performed using internal PBSA solver in mmpbsa_py_energy
+|
+|Generalized Born ESURF calculated using 'LCPO' surface areas
+|
+|All units are reported in kcal/mole.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+GENERALIZED BORN:
+
+Complex:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                   -430.0481                9.0200              0.6378
+EEL                       2740.8348               57.6286              4.0750
+EGB                      -5661.4591               50.5356              3.5734
+ESURF                       24.2941                0.4473              0.0316
+
+G gas                     2310.7866               55.0776              3.8946
+G solv                   -5637.1650               50.7394              3.5878
+
+TOTAL                    -3326.3783               16.5870              1.1729
+
+
+Receptor:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                   -394.9205                8.0307              0.5679
+EEL                       3836.9204               79.0404              5.5890
+EGB                      -6742.4483               72.6113              5.1344
+ESURF                       24.7701                0.4040              0.0286
+
+G gas                     3441.9999               77.2452              5.4621
+G solv                   -6717.6782               72.7888              5.1469
+
+TOTAL                    -3275.6782               15.3216              1.0834
+
+
+Ligand:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                     -1.6346                0.4620              0.0327
+EEL                        156.5060                6.9520              0.4916
+EGB                       -156.0773                2.3049              0.1630
+ESURF                        3.2056                0.0429              0.0030
+
+G gas                      154.8714                6.9477              0.4913
+G solv                    -152.8717                2.3398              0.1654
+
+TOTAL                        1.9998                6.1395              0.4341
+
+
+Differences (Complex - Receptor - Ligand):
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                    -33.4930                3.3401              0.2362
+EEL                      -1252.5917               31.7946              2.2482
+EGB                       1237.0665               29.0040              2.0509
+ESURF                       -3.6817                0.1209              0.0085
+
+DELTA G gas              -1286.0847               32.8270              2.3212
+DELTA G solv              1233.3849               28.9463              2.0468
+
+DELTA TOTAL                -52.6998                5.3165              0.3759
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+POISSON BOLTZMANN:
+
+Complex:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                   -430.0481                9.0200              0.6378
+EEL                       2740.8348               57.6286              4.0750
+EPB                      -5755.5310               50.4306              3.5660
+ENPOLAR                     26.6511                0.4492              0.0318
+
+G gas                     2310.7866               55.0776              3.8946
+G solv                   -5728.8799               50.7069              3.5855
+
+TOTAL                    -3418.0933               17.5796              1.2431
+
+
+Receptor:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                   -394.9205                8.0307              0.5679
+EEL                       3836.9204               79.0404              5.5890
+EPB                      -6830.2128               72.7656              5.1453
+ENPOLAR                     27.3818                0.4310              0.0305
+
+G gas                     3441.9999               77.2452              5.4621
+G solv                   -6802.8310               73.0343              5.1643
+
+TOTAL                    -3360.8311               16.1001              1.1385
+
+
+Ligand:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                     -1.6346                0.4620              0.0327
+EEL                        156.5060                6.9520              0.4916
+EPB                       -162.3042                2.5517              0.1804
+ENPOLAR                      3.5889                0.0388              0.0027
+
+G gas                      154.8714                6.9477              0.4913
+G solv                    -158.7153                2.5801              0.1824
+
+TOTAL                       -3.8439                5.9487              0.4206
+
+
+Differences (Complex - Receptor - Ligand):
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                    -33.4930                3.3401              0.2362
+EEL                      -1252.5917               31.7946              2.2482
+EPB                       1236.9860               29.0020              2.0508
+ENPOLAR                     -4.3196                0.0960              0.0068
+EDISPER                      0.0000                0.0000              0.0000
+
+DELTA G gas              -1286.0847               32.8270              2.3212
+DELTA G solv              1232.6664               28.9586              2.0477
+
+DELTA TOTAL                -53.4183                6.6553              0.4706
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
