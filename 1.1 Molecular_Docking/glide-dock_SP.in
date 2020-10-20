@@ -6,10 +6,10 @@ Inputs: (1) Receptor Grid file (Grid generation must be performed prior to runni
 
 Inputs: (2) prepared ligand file (The main objective of LigPrep is to take 2D or 3D structures and produce the corresponding low-energy 3D structures for use by programs such as Glide and QikProp. The input and output can be in SD or Maestro format. LigPrep can produce multiple output structures for each input structure by generating different protonation states, stereochemistry, tautomers, and ring conformations.)
 
-Inputs: (3) glide-dock_SP.in (docking parameter file)
+Inputs: (3) glide-dock_XP_1OLD-grid7-interesting.in (docking parameter file)
 
 Outputs: Pose Viewer file (Glide output, which is compressed by default, includes a number of properties including docking score)
 
-Command: glide glide-dock_XP_1OLD-grid7-interesting.in -HOST qin  -NJOBS 150  (here we used 150 cores simultaneously, it will be separated into 150 subjobs, one is shown as example)
+Command: glide glide-dock_XP_1OLD-grid7-interesting.in -HOST qin  -NJOBS 150  (here we used 150 cores simultaneously in Glide XP docking, it will be separated into 150 subjobs, one is shown as example)
 
 Here, we shown one temporary output of the subjob40, which will be merged with other 149 jobs to one complete file, named glide-dock_XP_1OLD-grid7-interesting_pv.maegz.
