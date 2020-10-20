@@ -1,6 +1,4 @@
 # AptamerTarget_VS
-High-throughput virtual screening towards potential targets of aptamer
-
 The computational screening of promiscuous binders for an aptamer consisted of two stages: 
 
 (1) High-throughput virtual screening, which consisted of molecular docking and conformational relaxation to identify the primary candidates of aptamer;
@@ -9,5 +7,8 @@ The computational screening of promiscuous binders for an aptamer consisted of t
 
 Here, we selected L-argininamide (L-Arm) binding aptamer (LABA) as an example to present all computational details and related scripts.
 
-There are three folders now:
-
+There are four folders listed below:
+1.1 Molecular_Docking
+1.2 Prime_MMGBSA
+2.1 MD_Simulation
+2.2 Binding_Free_Energy_Calculation
