@@ -2,11 +2,11 @@ In this section, we performed Prime MM-GBSA calculation that computed the force 
 See https://www.schrodinger.com/kb/1875?original_search=Prime%20MM-GBSA
 and https://www.schrodinger.com/training/tutorials for more explanation.
 
-Inputs: Pose Viewer file (Glide output) or the separated ligand and protein structures (for example, prime_mmgbsa_1OLD-grid1_pv.maegz below).
-Outputs: The output Maestro structure file, which is compressed by default, includes a number of properties. prime_mmgbsa_1OLD-grid1-names-out.maegz
+Inputs: Pose Viewer file (Glide output) or the separated ligand and protein structures (for example, prime_mmgbsa_1OLD-model7-80cpds_pv.maegz below).
+Outputs: The output Maestro structure file, which is compressed by default, includes a number of properties (for example, prime_mmgbsa_1OLD-model7-80cpds-out.maegz below).
 
 Commands:
-prime_mmgbsa -out_type COMPLEX -flexdist 6.0 prime_mmgbsa_1OLD-grid1_pv.maegz 
+prime_mmgbsa -out_type COMPLEX -flexdist 6.0 prime_mmgbsa_1OLD-model7-80cpds_pv.maegz 
 
 ******************************************************
 There are five fundamental energy calculations done in Prime MM-GBSA:
