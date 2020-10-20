@@ -1,0 +1,39 @@
+integrator              = md
+dt                      = 0.002
+nsteps                  = 500000000
+nstxout             =  500000
+nstvout             =  500000
+nstxtcout           =  50000
+nstfout             =  0
+nstcalcenergy           = 50000
+nstenergy               = 50000
+;
+cutoff-scheme           = Verlet
+nstlist                 = 50
+rlist                   = 1.4
+coulombtype             = pme
+rcoulomb                = 1.4
+vdwtype                 = Cut-off
+rvdw_switch             = 1.0
+rvdw                    = 1.4
+;
+tcoupl                  = v-rescale
+tc_grps                 = PROT   MEMB   SOL_ION
+tau_t                   = 0.1    0.1    0.1
+ref_t                   = 300   300   300
+;
+pcoupl                  = berendsen
+pcoupltype              = semiisotropic
+tau_p                   = 1.0
+compressibility         = 4.5e-5  4.5e-5
+ref_p                   = 1.0     1.0
+;
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+continuation            = yes
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = PROT   MEMB   SOL_ION
+;
+refcoord_scaling        = com

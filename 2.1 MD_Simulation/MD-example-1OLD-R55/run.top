@@ -1,0 +1,37 @@
+;
+;	File 'topol.top' was generated
+;	By user: qzhou (57610)
+;	On host: rclogin11.rc.fas.harvard.edu
+;	At date: Mon Dec  5 21:39:58 2016
+;
+;	This is a standalone topology file
+;
+;	It was generated using program:
+;	pdb2gmx_mpi_d - VERSION 4.6.5
+;
+;	Command line was:
+;	pdb2gmx_mpi_d -f 1OLD-1.pdb -ignh -ff amber99sb_parmbsc0 -o dna.top 
+;
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amber99sb_parmbsc0.ff/forcefield.itp"
+; Include water topology
+#include "./amber99sb_parmbsc0.ff/tip3p.itp"
+#include "ligand.itp"
+#include "dna.itp"
+; Include topology for ions
+#include "./amber99sb_parmbsc0.ff/ions.itp"
+
+[ system ]
+; Name
+1old-1 in water
+
+[ molecules ]
+; Compound        #mols
+DNA_chain_A         1
+MOL                 1
+SOL         6525
+NA               23
+CL               2
