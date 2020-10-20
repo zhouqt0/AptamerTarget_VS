@@ -2,14 +2,16 @@ In this section, we performed molecular docking using Glide SP. The solution str
 See https://www.schrodinger.com/glide 
 and https://www.schrodinger.com/training/structure-based-virtual-screening-using-glide-workshop-tutorial203 for more explanation.
 
-Inputs: (1) Receptor Grid file (Grid generation must be performed prior to running a virtual screen with Glide. The shape and properties of the receptor are represented in a grid by fields that become progressively more discriminating during the docking process.)
+Here, we shown one temporary output of the subjob40, which will be merged with other 149 jobs to one complete file, named glide-dock_XP_1OLD-grid7-interesting_pv.maegz.
 
-Inputs: (2) prepared ligand file (The main objective of LigPrep is to take 2D or 3D structures and produce the corresponding low-energy 3D structures for use by programs such as Glide and QikProp. The input and output can be in SD or Maestro format. LigPrep can produce multiple output structures for each input structure by generating different protonation states, stereochemistry, tautomers, and ring conformations.)
+Inputs: (1) Receptor Grid file (Grid generation must be performed prior to running a virtual screen with Glide. The shape and properties of the receptor are represented in a grid by fields that become progressively more discriminating during the docking process; glide-grid_1OLD_grid7.zip for subjob40)
 
-Inputs: (3) glide-dock_XP_1OLD-grid7-interesting.in (docking parameter file)
+Inputs: (2) prepared ligand file (The main objective of LigPrep is to take 2D or 3D structures and produce the corresponding low-energy 3D structures for use by programs such as Glide and QikProp. The input and output can be in SD or Maestro format. LigPrep can produce multiple output structures for each input structure by generating different protonation states, stereochemistry, tautomers, and ring conformations; glide-dock_XP_1OLD-grid7-interesting-040_in.maegz for subjob40).
 
-Outputs: Pose Viewer file (Glide output, which is compressed by default, includes a number of properties including docking score)
+Inputs: (3) glide-dock_SP.in (docking parameter file; glide-dock_XP_1OLD-grid7-interesting-040.inp for subjob40)
+
+Outputs: Pose Viewer file (Glide output, which is compressed by default, includes a number of properties including docking score; glide-dock_XP_1OLD-grid7-interesting-040_pv.maegz for subjob40)
+         Log file (glide-dock_XP_1OLD-grid7-interesting-040.log for subjob40)
 
 Command: glide glide-dock_XP_1OLD-grid7-interesting.in -HOST qin  -NJOBS 150  (here we used 150 cores simultaneously in Glide XP docking, it will be separated into 150 subjobs, one is shown as example)
 
-Here, we shown one temporary output of the subjob40, which will be merged with other 149 jobs to one complete file, named glide-dock_XP_1OLD-grid7-interesting_pv.maegz.
