@@ -7,8 +7,12 @@ The computational screening of promiscuous binders for an aptamer consisted of t
 
 Here, we selected L-argininamide (L-Arm) binding aptamer (LABA) as an example to present all computational details and related scripts.
 
-There are four folders listed below:
+There are four folders listed below, the first two belong to Stage 1, while the latter two belongs to Stage 2:
+
 1.1 Molecular_Docking
+
 1.2 Prime_MMGBSA
+
 2.1 MD_Simulation
+
 2.2 Binding_Free_Energy_Calculation
