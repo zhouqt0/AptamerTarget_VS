@@ -1,3 +1,15 @@
-GRIDFILE   glide-grid_1OLD_grid1.zip
-LIGANDFILES   NC02_H-3.maegz
-PRECISION   SP
+In this section, we performed molecular docking using Glide SP. The solution structure of L-Arm-binding aptamer (LABA)－L-Arm complex (PDB code: 1OLD) was prepared using the Protein Preparation Wizard module in the Schrödinger 2017-4, while all the compounds were prepared by the LigPrep module. The docking grid was centered on L-Arm with a ligand diameter midpoint box of 10 Å on all three axes. All compounds were docked by Glide SP with the default scaling factor of 0.8 and a partial charge cutoff of 0.15.
+See https://www.schrodinger.com/glide 
+and https://www.schrodinger.com/training/structure-based-virtual-screening-using-glide-workshop-tutorial203 for more explanation.
+
+Inputs: (1) Receptor Grid file (Grid generation must be performed prior to running a virtual screen with Glide. The shape and properties of the receptor are represented in a grid by fields that become progressively more discriminating during the docking process.)
+
+Inputs: (2) prepared ligand file (The main objective of LigPrep is to take 2D or 3D structures and produce the corresponding low-energy 3D structures for use by programs such as Glide and QikProp. The input and output can be in SD or Maestro format. LigPrep can produce multiple output structures for each input structure by generating different protonation states, stereochemistry, tautomers, and ring conformations.)
+
+Inputs: (3) glide-dock_SP.in (docking parameter file)
+
+Outputs: Pose Viewer file (Glide output, which is compressed by default, includes a number of properties including docking score)
+
+Command: glide glide-dock_XP_1OLD-grid7-interesting.in -HOST qin  -NJOBS 150  (here we used 150 cores simultaneously, it will be separated into 150 subjobs, one is shown as example)
+
+Here, we shown one temporary output of the subjob40, which will be merged with other 149 jobs to one complete file, named glide-dock_XP_1OLD-grid7-interesting_pv.maegz.
